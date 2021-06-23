@@ -1,17 +1,18 @@
 # Jupyter Seed 
 
-This project provides a basis of common infrastructure that a jupyter project needs. 
+This project provides the common infrastructure that a Jupyter project needs. 
 It provides a folder structure to accomodate data files, py files for modular logic, and notebooks.
+The folder structure can be extended with a models or test folders, depending on the needs.
 The project uses a local SQLite database, though other databases can also be woven into it.
 
 ## Items Included 
 
 **requirements.txt:** This file can be used to install all of the virtual env's packages. 
-The packages installed are meant for any jupyter project: jupyter, pandas and SQLalchemy. 
+The packages installed are meant for any minimal project: jupyter, pandas and sqlalchemy. 
 The only more specialized package is selenium, not every project will use it.
 
 **base_module:** This module serves as the seed module. 
-This means that it does not solve a business problem, instead it serves to typecast the boilerplate code that is shared by many modules.
+This means that it does not solve a business problem, instead it serves to typecast the boilerplate code that is common for all custom modules.
 Therefore, to create a new module, you should copy+paste this one and rename it.
 It includes the following sample notebooks:
 - generic: The seed notebook that should be copy+paste to create all new notebooks.

@@ -68,7 +68,7 @@ class DeviantArtScraper(object):
 
         while not reachedBottom:
             bodyLm.send_keys(KY.Keys.PAGE_DOWN)
-            time.sleep(0.6)
+            time.sleep(0.9)
             currentHeight = self.driver.execute_script("return document.body.scrollHeight")
             pageDownCnt += 1
 

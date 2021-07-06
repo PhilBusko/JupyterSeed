@@ -1,7 +1,7 @@
 # Jupyter Seed 
 
 This project provides the common infrastructure that a Jupyter project needs. 
-It provides a folder structure to accomodate data files, py files for modular logic, and notebooks.
+This is a folder structure to accomodate notebooks, py files for modular logic, and data files. 
 The folder structure can be extended with a models or test folders, depending on the needs.
 The project uses a local SQLite database, though other databases can also be woven into it.
 

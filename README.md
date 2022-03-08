@@ -22,8 +22,3 @@ Also provides advanced examples for user defined functions and table joins.
 - graphs: A primer into the plotly package. The Lego data is used to show scatter plots and histograms.
 - images: Basic sample of showing an image in a notebook. Further image work will require the OpenCV package.
 
-**pictures_manager:** A toy project of mine for scraping the DeviantArt website. 
-It also keeps a database of the artists that I have inspected or downloaded from. 
-Uses [Selenium](https://pypi.org/project/selenium/) to log in and web crawl the site, 
-and [urllib](https://docs.python.org/3/library/urllib.html) for the actual downloads.
-

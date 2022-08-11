@@ -1,3 +1,4 @@
+# JUPYTER SEED PIP
 jupyter
 pandas
 plotly

@@ -9,7 +9,6 @@ The project uses a local SQLite database, though other databases can also be wov
 
 **requirements.txt:** This file can be used to install all of the virtual env's packages. 
 The packages installed are meant for any minimal project: jupyter, pandas and sqlalchemy. 
-The only more specialized package is selenium, not every project will use it.
 
 **base_module:** This module serves as the seed module. 
 This means that it does not solve a business problem, instead it serves to typecast the boilerplate code that is common for all custom modules.

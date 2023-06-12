@@ -1,15 +1,17 @@
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 EXCEL SERVICE
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+import os
 import pandas as PD
 
-def readSheet(filePath, sheetName):
+
+def ReadSheet(filePath, sheetName):
     excelFl = PD.ExcelFile(filePath)
     sheetDf = PD.read_excel(excelFl, sheetName)
     excelFl.close()
     return sheetDf
 
-def appendToExcel(filePath, sheetName, updateLs):
+def AppendToExcel(filePath, sheetName, updateLs):
     """ Append data to an excel sheet. 
         If the file or sheet don't exist, they'll be created.
         updateLs: list of dictionaries with keys matching any existing sheet """
@@ -39,13 +41,13 @@ def appendToExcel(filePath, sheetName, updateLs):
     reportDf.to_excel(writer, sheet_name=sheetName, index=False)
     writer.close()
 
-def resetFile(filePath):
+def ResetFile(filePath):
     """ Delete file from the file system. """
 
     if os.path.exists(filePath): 
         os.remove(filePath)
 
-def resetSheet(filePath, sheetName):
+def ResetSheet(filePath, sheetName):
     """ Delete a sheet and keep the rest of the file. """
 
     try:

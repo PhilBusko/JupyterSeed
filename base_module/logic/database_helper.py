@@ -5,7 +5,8 @@ DATABASE HELPER
 import pandas as PD
 import sqlalchemy as SQL
 
-def connectSqlite(dbPath):
+
+def ConnectSqlite(dbPath):
 
     connectTx = f"sqlite:///{dbPath}"
     print(connectTx)
@@ -16,7 +17,7 @@ def connectSqlite(dbPath):
 
     return meta, engine   # engine.connect()
 
-def connectPostgresql():
+def ConnectPostgreSql():
 
     hostUrl = ''
     database = ''

@@ -1,6 +1,6 @@
 # JUPYTER SEED PIP
 jupyter
 pandas
-plotly
-sqlalchemy
+sqlalchemy==1.4.46  # v2 is bogus
 psycopg2
+plotly
